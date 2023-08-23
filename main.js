@@ -1,12 +1,12 @@
-//gtec_1986 
+//gtec_1986:
 let data;
 let e;
 let form = []
 let = i = 0
 let n_data = []
-let campos = ['cep', 'logradouro', 'complemento', 'bairro', 'localidade', 'uf',]
-for (let i = 0; i < campos.length; i++) {
-     form[i] = document.querySelector('#' + campos[i])
+let complements = ['cep', 'logradouro', 'complemento', 'bairro', 'localidade', 'uf',]
+for (let i = 0; i < complements.length; i++) {
+     form[i] = document.querySelector('#' + complements[i])
 }
 
 const CEP = document.querySelector('#cep')
@@ -19,7 +19,7 @@ const cep = document.querySelector('#cep').onkeyup = e => {
      }
 
      if (CEP.value !== '' && CEP.value.length === 8 && e.isTrusted === true && e.key === 'Enter') {
-          for (i = 0; i > campos.length; i++) { form[i].value = '' }
+          for (i = 0; i > complements.length; i++) { form[i].value = '' }
           search()
      }
 
